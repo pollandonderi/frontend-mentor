@@ -1,0 +1,52 @@
+@import 'src/themes.scss';
+
+.section{
+    background-color:$background-color;
+    height: 100dvh;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-inline: 5em;
+    background: $section-inside-background;
+    color: $text-white;
+    border-radius: 10px;
+}
+.class-2{
+    background-image: url('/assets/desktop.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:0 10px 10px 0;
+    // height: 22em;
+    
+}
+span{
+    color:$customised-text-heading;
+}
+.padding-heading{
+    padding-inline: 1.4em;
+    font-size: 2.85rem;
+}
+.padding-paragraph-class1{
+    padding-inline-start: 3.9em;
+    font-size: 1rem;
+    letter-spacing: .03em;
+    padding-inline-end: 6em;
+    line-height: 1.7em;
+    color: $text-color;
+}
+.last-content-class1{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-inline: 3.8em;
+}
+h4{
+    font-size: 0.8rem;
+    color: $text-color;
+}
