@@ -1,28 +1,31 @@
 @import 'src/themes.scss';
-
+body{
+    font-family: 'Inter', sans-serif;
+}
 .section{
-    background-color:$background-color;
-    height: 100dvh;
-    height: 100svh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background:hsl(232.9, 48.6%, 6.9%);
+    display: grid;
+   place-items: center;
+    // margin: 0;
+    // padding: 0;
     
 }
 .main-content{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+grid-template-columns: none;
     margin-inline: 5em;
     background: $section-inside-background;
     color: $text-white;
     border-radius: 10px;
+    margin-block: 2em;
 }
 .class-2{
+    background-color: $customised-text-heading;
     background-image: url('/assets/desktop.webp');
+    background-blend-mode: multiply;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius:0 10px 10px 0;
-    // height: 22em;
+    border-radius:0px 10px 10px 0px;
     
 }
 span{
@@ -49,4 +52,39 @@ span{
 h4{
     font-size: 0.8rem;
     color: $text-color;
+}
+  
+@media (min-width:60em) {
+    .section{
+        height: 100dvh;
+        height: 100svh;
+    }
+    .main-content{
+    grid-template-columns: repeat(2,1fr);
+    }
+   
+}
+@media (max-width:59em) {
+    .class-1{
+        grid-row: 2/span 1
+    }
+    .class-2{
+        background-color: $customised-text-heading;
+        background-image: url('/assets/desktop.webp');
+        background-blend-mode: multiply;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius:10px 10px 0px 0;
+        height: 22em;
+        
+    }
+    .last-content-class1{
+        padding-top: 2em;
+display: flex;
+flex-direction: row;
+padding-inline: 3.8em;
+gap: 2em;
+flex-wrap: wrap;
+    }
+    
 }
